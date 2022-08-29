@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario empleo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-warning">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">Form1</a>
+      </div>
+    </nav>
+    <div class="container col-md-6">
+      <div class="shadow-lg p-3 mb-5 mt-4 bg-body rounded">
+        <form>
+          <h2 style="text-align:center;">Inscripcion</h2>
+          <div class="row">
+            <div class="col-md-6
+            ">
+              <label for="nombre" class="form-label">Nombre completo</label>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                class="form-control"
+                placeholder="Nombres"
+                
+              />
+            </div>
+            <div class="col-md-6 mt-2">
+              <label for="nombre" class="form-label"> </label>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                class="form-control"
+                placeholder="Apellidos"
+                
+              />
+            </div>
+            <div class="col-md-6 mt-3">
+              <label for="correo" class="form-label">Correo Electronico</label>
+              <input type="email" name="correo" class="form-control"/>
+            </div>
+            <div class="col-md-6 mt-3">
+              <label for="puesto" class="form-label">Nivel Actual</label>
+              <select name="puesto" id="puesto" class="form-select">
+                <option selected disabled value="">Seleccionar</option>
+                <option>Junior</option>
+                <option>Semi Senior</option>
+                <option>Senior</option>
+              </select>
+            </div>
+            <div class="col-md-3 mt-3">
+              <label for="situacion" class="form-label">Nacionalidad</label><br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Guatemala</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Mexico</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                <label class="form-check-label" for="inlineRadio3">Honduras</label>
+              </div>
+            </div>
+            <div class="col-md-9 mt-3">
+              <label for="habilidades" class="form-label">Ingrese el numero de tarjeta *</label>
+              <input type="text" class="form-control" name="habilidades" placeholder="visa/mastercard/BBVA" required>
+            </div>
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="subimit" class="btn btn-warning btn-lg" style="margin-top: 10px;">Inscribirse</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
